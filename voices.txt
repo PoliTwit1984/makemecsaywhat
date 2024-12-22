@@ -1,0 +1,345 @@
+Available Hedra Voices:
+
+Name: Alice
+Voice ID: Xb7hH8MSUJpSbSDYk0k2
+Service: eleven
+Premium: False
+Description: No description
+Labels:
+  - use_case: news
+  - description: confident
+  - gender: female
+  - accent: British
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/Xb7hH8MSUJpSbSDYk0k2/d10f7534-11f6-41fe-a012-2de1e482d336.mp3
+
+--------------------------------------------------
+
+Name: Brian
+Voice ID: nPczCjzI2devNBz1zQrb
+Service: eleven
+Premium: False
+Description: No description
+Labels:
+  - use_case: narration
+  - description: deep
+  - gender: male
+  - accent: American
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/nPczCjzI2devNBz1zQrb/2dd3e72c-4fd3-42f1-93ea-abc5d4e5aa1d.mp3
+
+--------------------------------------------------
+
+Name: Charlotte
+Voice ID: XB0fDUnXU5powFXDhCwa
+Service: eleven
+Premium: False
+Description: No description
+Labels:
+  - use_case: characters
+  - description: seductive
+  - gender: female
+  - accent: Swedish
+  - age: young
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/XB0fDUnXU5powFXDhCwa/942356dc-f10d-4d89-bda5-4f8505ee038b.mp3
+
+--------------------------------------------------
+
+Name: Commercial Lady
+Voice ID: c2ac25f9-ecc4-4f56-9095-651354df60c0
+Service: cartesia
+Premium: False
+Description: No description
+Labels:
+  - gender: female
+  - accent: American
+  - description: marketer
+Preview URL: https://dream-product-public.s3.us-west-2.amazonaws.com/voices/audio_sample_cai_c2ac25f9.wav
+
+--------------------------------------------------
+
+Name: Dr. Von Fusion
+Voice ID: Mg1264PmwVoIedxsF9nu
+Service: eleven
+Premium: False
+Description: A crazy mad scientist voice, perfect for animation and video games.
+Labels:
+  - use_case: humor
+  - gender: male
+  - description: mad scientist
+  - descriptive: anxious
+  - language: en
+  - accent: German
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/P6pUmq42X5NZv0RV97gQ0XrmuXL2/voices/Mg1264PmwVoIedxsF9nu/02538d3a-f225-445a-bb58-4983e74cc609.mp3
+
+--------------------------------------------------
+
+Name: Emily
+Voice ID: LcfcDJNUP1GQjkzn1xUU
+Service: eleven
+Premium: False
+Description: No description
+Labels:
+  - use_case: meditation
+  - description: calm
+  - gender: female
+  - accent: American
+  - age: young
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/LcfcDJNUP1GQjkzn1xUU/e4b994b7-9713-4238-84f3-add8fccaaccd.mp3
+
+--------------------------------------------------
+
+Name: George
+Voice ID: JBFqnCBsd6RMkjVDRZzb
+Service: eleven
+Premium: False
+Description: No description
+Labels:
+  - use_case: narration
+  - description: warm
+  - gender: male
+  - accent: British
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/JBFqnCBsd6RMkjVDRZzb/e6206d1a-0721-4787-aafb-06a6e705cac5.mp3
+
+--------------------------------------------------
+
+Name: Hideo
+Voice ID: FMgBdHe1YV2Xi0B9anXW
+Service: eleven
+Premium: True
+Description: Middle-aged man with a Japanese/Asian accent, reflecting typical Japanese pronunciation. Great for the narration of Asian character.
+Labels:
+  - use_case: characters_animation
+  - gender: male
+  - descriptive: gentle
+  - description: articulate
+  - language: en
+  - accent: Japanese
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/rQRVoYhNU6WxttX8NDQF9vwAFcC3/voices/FMgBdHe1YV2Xi0B9anXW/e865a20f-c1bf-4682-b0f0-a4512bbec375.mp3
+
+--------------------------------------------------
+
+Name: Jamal
+Voice ID: 6OzrBCQf8cjERkYgzSg8
+Service: eleven
+Premium: True
+Description: Young Black African American voice. Perfect for casual conversation and social media voice overs to add spice into your creations. 
+Labels:
+  - use_case: social_media
+  - descriptive: chill
+  - language: en
+  - gender: male
+  - accent: American
+  - age: young
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/6OzrBCQf8cjERkYgzSg8/YmWdAA5ju6tNyK5Zl104.mp3
+
+--------------------------------------------------
+
+Name: Kawaii Aerisita
+Voice ID: vGQNBgLaiM3EdZtxIiuY
+Service: eleven
+Premium: False
+Description: Young, American female with an adorable and youthful voice. Perfect for anime, video games, or productions geared towards a young audience. This voice embodies cheerfulness, sweetness, and has an unmistakably kawaii charm.
+Labels:
+  - use_case: characters_animation
+  - descriptive: pleasant
+  - language: en
+  - gender: female
+  - accent: American
+  - age: young
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/vGQNBgLaiM3EdZtxIiuY/3OOQbnMcstKkjITFIBqC.mp3
+
+--------------------------------------------------
+
+Name: Laura
+Voice ID: FGY2WhTYpPnrIDTdsKH5
+Service: eleven
+Premium: False
+Description: No description
+Labels:
+  - use_case: social media
+  - description: upbeat
+  - gender: female
+  - accent: American
+  - age: young
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/FGY2WhTYpPnrIDTdsKH5/67341759-ad08-41a5-be6e-de12fe448618.mp3
+
+--------------------------------------------------
+
+Name: Leo Moreno
+Voice ID: 3l9iCMrNSRR0w51JvFB0
+Service: eleven
+Premium: True
+Description: A young-ish Mexican male speaking English. Voice is calm, intentional, happy. Great for conversations.
+Labels:
+  - use_case: conversational
+  - descriptive: calm
+  - language: en
+  - gender: male
+  - accent: Spanish
+  - age: young
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/3l9iCMrNSRR0w51JvFB0/wa4Jrtgv0UagGfNiUIb3.mp3
+
+--------------------------------------------------
+
+Name: Lily
+Voice ID: pFZP5JQG7iQjIQuC4Bku
+Service: eleven
+Premium: False
+Description: No description
+Labels:
+  - use_case: narration
+  - description: warm
+  - gender: female
+  - accent: British
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/pFZP5JQG7iQjIQuC4Bku/89b68b35-b3dd-4348-a84a-a3c13a3c2b30.mp3
+
+--------------------------------------------------
+
+Name: Lisa Kim
+Voice ID: VjguIG2t2hwOlsU1ftxC
+Service: eleven
+Premium: True
+Description: A young smart and calm Asian woman in her 20s. Great for reading famous quotes, proverbs, and Wikipedia.
+Labels:
+  - use_case: narrative_story
+  - descriptive: calm
+  - language: en
+  - gender: female
+  - accent: Korean
+  - age: young
+Preview URL: https://storage.googleapis.com/eleven-public-prod/HiAKNcXbpYTwAYCqvVmdPP51AHZ2/voices/VjguIG2t2hwOlsU1ftxC/f605da5a-857d-4196-8fca-5d49f51e4f91.mp3
+
+--------------------------------------------------
+
+Name: Matilda
+Voice ID: XrExE9yKIg1WjnnlVkGX
+Service: eleven
+Premium: False
+Description: No description
+Labels:
+  - use_case: narration
+  - description: friendly
+  - gender: female
+  - accent: American
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/XrExE9yKIg1WjnnlVkGX/b930e18d-6b4d-466e-bab2-0ae97c6d8535.mp3
+
+--------------------------------------------------
+
+Name: Naty Heals
+Voice ID: V77d29cqc7l8QOxgtgzi
+Service: eleven
+Premium: True
+Description: An American female in her early 30's with a slight mexican/puerto rican accent. Voice works well for conversational content.
+Labels:
+  - use_case: conversational
+  - descriptive: casual
+  - language: en
+  - gender: female
+  - accent: American
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/V77d29cqc7l8QOxgtgzi/R2JiOBrguKM6m8TuPThe.mp3
+
+--------------------------------------------------
+
+Name: Patrick
+Voice ID: TPRq9ApqHzrtMlhzSx4d
+Service: eleven
+Premium: True
+Description: German Speaker, about 40 years, promotional voice-appeal. Perfect for Ads and Off-Voice.
+Labels:
+  - use_case: advertisement
+  - descriptive: professional
+  - language: de
+  - gender: male
+  - accent: German
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/database/user/HydeGqsZ0NankH22YNnMg1kPebt2/voices/TPRq9ApqHzrtMlhzSx4d/PMGufWEdNLuWSVybKGkQ.mp3
+
+--------------------------------------------------
+
+Name: Prof. Marshal
+Voice ID: nzeAacJi50IvxcyDnMXa
+Service: eleven
+Premium: True
+Description: Marshal is an exuberant German male. Voice is suitable for Characters & Animations.
+Labels:
+  - use_case: characters_animation
+  - descriptive: upbeat
+  - language: en
+  - gender: male
+  - accent: German
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/database/user/tyE0D9mjdMVgam8KhyRXaVz4uos2/voices/nzeAacJi50IvxcyDnMXa/SONnNkZmPDlpWrwBBd4q.mp3
+
+--------------------------------------------------
+
+Name: Raju
+Voice ID: 3gsg3cxXyFLcGIfNbM6C
+Service: eleven
+Premium: True
+Description: 
+This voice has the familiar warmth and approachability of a regular Indian speaker, yet it carries a professionalism that makes it versatile for a range of applications. It's clear and articulate enough to engage audiences on social media, provide guidance through customer care bots, and serve in various other communication roles. Its authentic Indian tone adds a layer of relatability without compromising on clarity or effectiveness, making it an excellent choice for connecting with audiences.
+Labels:
+  - use_case: conversational
+  - descriptive: professional
+  - language: en
+  - gender: male
+  - accent: Indian
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/3gsg3cxXyFLcGIfNbM6C/hJ0qjQN0lgVx1hf8it0w.mp3
+
+--------------------------------------------------
+
+Name: Tara
+Voice ID: P7vsEyTOpZ6YUTulin8m
+Service: eleven
+Premium: True
+Description: Tara is a professional actress with extensive acting experience and great potential ahead. You will hear all those emotions in her voice. Give it a try, and I'm sure you will love it.
+Labels:
+  - use_case: conversational
+  - descriptive: pleasant
+  - language: en
+  - gender: female
+  - accent: Indian
+  - age: young
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/P7vsEyTOpZ6YUTulin8m/S37OM3vG5E7e33WFgs8r.mp3
+
+--------------------------------------------------
+
+Name: Todd
+Voice ID: AQ6yxtsTonfHLHY2zUcO
+Service: eleven
+Premium: False
+Description: Middle aged American Male Universal Voice. Great for TV Ads and other commercials.
+Labels:
+  - use_case: advertisement
+  - descriptive: confident
+  - language: en
+  - gender: male
+  - accent: American
+  - age: middle aged
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/AQ6yxtsTonfHLHY2zUcO/HP7LMJt0BmG93F55GEal.mp3
+
+--------------------------------------------------
+
+Name: Will
+Voice ID: bIHbv24MWmeRgasZH58o
+Service: eleven
+Premium: False
+Description: No description
+Labels:
+  - use_case: social media
+  - description: friendly
+  - gender: male
+  - accent: American
+  - age: young
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/bIHbv24MWmeRgasZH58o/8caf8f3d-ad29-4980-af41-53f20c72d7a4.mp3
+
+--------------------------------------------------
+

@@ -1,0 +1,559 @@
+Available ElevenLabs Voices:
+
+Name: Aria
+Voice ID: 9BWtsMINqrJLrRacOk9x
+Category: premade
+Labels:
+  - accent: American
+  - description: expressive
+  - age: middle-aged
+  - gender: female
+  - use_case: social media
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/9BWtsMINqrJLrRacOk9x/405766b8-1f4e-4d3c-aba1-6f25333823ec.mp3
+
+--------------------------------------------------
+
+Name: Roger
+Voice ID: CwhRBWXzGAHq8TQ4Fs17
+Category: premade
+Labels:
+  - accent: American
+  - description: confident
+  - age: middle-aged
+  - gender: male
+  - use_case: social media
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/CwhRBWXzGAHq8TQ4Fs17/58ee3ff5-f6f2-4628-93b8-e38eb31806b0.mp3
+
+--------------------------------------------------
+
+Name: Sarah
+Voice ID: EXAVITQu4vr4xnSDxMaL
+Category: premade
+Labels:
+  - accent: american
+  - description: soft
+  - age: young
+  - gender: female
+  - use_case: news
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/EXAVITQu4vr4xnSDxMaL/01a3e33c-6e99-4ee7-8543-ff2216a32186.mp3
+
+--------------------------------------------------
+
+Name: Laura
+Voice ID: FGY2WhTYpPnrIDTdsKH5
+Category: premade
+Labels:
+  - accent: American
+  - description: upbeat
+  - age: young
+  - gender: female
+  - use_case: social media
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/FGY2WhTYpPnrIDTdsKH5/67341759-ad08-41a5-be6e-de12fe448618.mp3
+
+--------------------------------------------------
+
+Name: Charlie
+Voice ID: IKne3meq5aSn9XLyUdCD
+Category: premade
+Labels:
+  - accent: Australian
+  - description: natural
+  - age: middle aged
+  - gender: male
+  - use_case: conversational
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/IKne3meq5aSn9XLyUdCD/102de6f2-22ed-43e0-a1f1-111fa75c5481.mp3
+
+--------------------------------------------------
+
+Name: George
+Voice ID: JBFqnCBsd6RMkjVDRZzb
+Category: premade
+Labels:
+  - accent: British
+  - description: warm
+  - age: middle aged
+  - gender: male
+  - use_case: narration
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/JBFqnCBsd6RMkjVDRZzb/e6206d1a-0721-4787-aafb-06a6e705cac5.mp3
+
+--------------------------------------------------
+
+Name: Callum
+Voice ID: N2lVS1w4EtoT3dr4eOWO
+Category: premade
+Labels:
+  - accent: Transatlantic
+  - description: intense
+  - age: middle-aged
+  - gender: male
+  - use_case: characters
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/N2lVS1w4EtoT3dr4eOWO/ac833bd8-ffda-4938-9ebc-b0f99ca25481.mp3
+
+--------------------------------------------------
+
+Name: River
+Voice ID: SAz9YHcvj6GT2YYXdXww
+Category: premade
+Labels:
+  - accent: American
+  - description: confident
+  - age: middle-aged
+  - gender: non-binary
+  - use_case: social media
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/SAz9YHcvj6GT2YYXdXww/e6c95f0b-2227-491a-b3d7-2249240decb7.mp3
+
+--------------------------------------------------
+
+Name: Liam
+Voice ID: TX3LPaxmHKxFdv7VOQHJ
+Category: premade
+Labels:
+  - accent: American
+  - description: articulate
+  - age: young
+  - gender: male
+  - use_case: narration
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/TX3LPaxmHKxFdv7VOQHJ/63148076-6363-42db-aea8-31424308b92c.mp3
+
+--------------------------------------------------
+
+Name: Charlotte
+Voice ID: XB0fDUnXU5powFXDhCwa
+Category: premade
+Labels:
+  - accent: Swedish
+  - description: seductive
+  - age: young
+  - gender: female
+  - use_case: characters
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/XB0fDUnXU5powFXDhCwa/942356dc-f10d-4d89-bda5-4f8505ee038b.mp3
+
+--------------------------------------------------
+
+Name: Alice
+Voice ID: Xb7hH8MSUJpSbSDYk0k2
+Category: premade
+Labels:
+  - accent: British
+  - description: confident
+  - age: middle-aged
+  - gender: female
+  - use_case: news
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/Xb7hH8MSUJpSbSDYk0k2/d10f7534-11f6-41fe-a012-2de1e482d336.mp3
+
+--------------------------------------------------
+
+Name: Matilda
+Voice ID: XrExE9yKIg1WjnnlVkGX
+Category: premade
+Labels:
+  - accent: American
+  - description: friendly
+  - age: middle-aged
+  - gender: female
+  - use_case: narration
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/XrExE9yKIg1WjnnlVkGX/b930e18d-6b4d-466e-bab2-0ae97c6d8535.mp3
+
+--------------------------------------------------
+
+Name: Will
+Voice ID: bIHbv24MWmeRgasZH58o
+Category: premade
+Labels:
+  - accent: American
+  - description: friendly
+  - age: young
+  - gender: male
+  - use_case: social media
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/bIHbv24MWmeRgasZH58o/8caf8f3d-ad29-4980-af41-53f20c72d7a4.mp3
+
+--------------------------------------------------
+
+Name: Jessica
+Voice ID: cgSgspJ2msm6clMCkdW9
+Category: premade
+Labels:
+  - accent: American
+  - description: expressive
+  - age: young
+  - gender: female
+  - use_case: conversational
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/cgSgspJ2msm6clMCkdW9/56a97bf8-b69b-448f-846c-c3a11683d45a.mp3
+
+--------------------------------------------------
+
+Name: Eric
+Voice ID: cjVigY5qzO86Huf0OWal
+Category: premade
+Labels:
+  - accent: American
+  - description: friendly
+  - age: middle-aged
+  - gender: male
+  - use_case: conversational
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/cjVigY5qzO86Huf0OWal/d098fda0-6456-4030-b3d8-63aa048c9070.mp3
+
+--------------------------------------------------
+
+Name: Chris
+Voice ID: iP95p4xoKVk53GoZ742B
+Category: premade
+Labels:
+  - accent: American
+  - description: casual
+  - age: middle-aged
+  - gender: male
+  - use_case: conversational
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/iP95p4xoKVk53GoZ742B/3f4bde72-cc48-40dd-829f-57fbf906f4d7.mp3
+
+--------------------------------------------------
+
+Name: Brian
+Voice ID: nPczCjzI2devNBz1zQrb
+Category: premade
+Labels:
+  - accent: American
+  - description: deep
+  - age: middle-aged
+  - gender: male
+  - use_case: narration
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/nPczCjzI2devNBz1zQrb/2dd3e72c-4fd3-42f1-93ea-abc5d4e5aa1d.mp3
+
+--------------------------------------------------
+
+Name: Daniel
+Voice ID: onwK4e9ZLuTAKqWW03F9
+Category: premade
+Labels:
+  - accent: British
+  - description: authoritative
+  - age: middle-aged
+  - gender: male
+  - use_case: news
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/onwK4e9ZLuTAKqWW03F9/7eee0236-1a72-4b86-b303-5dcadc007ba9.mp3
+
+--------------------------------------------------
+
+Name: Lily
+Voice ID: pFZP5JQG7iQjIQuC4Bku
+Category: premade
+Labels:
+  - accent: British
+  - description: warm
+  - age: middle-aged
+  - gender: female
+  - use_case: narration
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/pFZP5JQG7iQjIQuC4Bku/89b68b35-b3dd-4348-a84a-a3c13a3c2b30.mp3
+
+--------------------------------------------------
+
+Name: Bill
+Voice ID: pqHfZKP75CvOlQylNhV4
+Category: premade
+Labels:
+  - accent: American
+  - description: trustworthy
+  - age: old
+  - gender: male
+  - use_case: narration
+Preview URL: https://storage.googleapis.com/eleven-public-prod/premade/voices/pqHfZKP75CvOlQylNhV4/d782b3ff-84ba-4029-848c-acf01285524d.mp3
+
+--------------------------------------------------
+
+Name: Brittney Hart - Male Child - Youthful, Raspy, Cute & Excitable 
+Voice ID: 5HuFhTDIKwL0cGenPHbW
+Category: professional
+Description: A male child with a youthful, raspy American voice. Ideal for kids' cartoons, animations, audiobooks with children, and more! Great for a little brother, a trouble maker, or fun loving boy. 
+Labels:
+  - language: en
+  - descriptive: childish
+  - accent: american
+  - gender: male
+  - age: young
+  - use_case: characters_animation
+Preview URL: https://storage.googleapis.com/eleven-public-prod/database/user/glklRmLoFeWZciiTRthKn6JAIwp1/voices/5HuFhTDIKwL0cGenPHbW/ib9Pc6rXHUjQZEqVQQBL.mp3
+
+--------------------------------------------------
+
+Name: Mr. B - Deep and Rich 
+Voice ID: 8g3yRGGwQdZMjSh79Uz4
+Category: professional
+Description: A deep and rich voice with a resonant quality a commanding presence, exuding confidence and authority. Perfect for audiobooks and late-night jazz narration.
+Labels:
+  - accent: american
+  - descriptive: deep
+  - age: middle_aged
+  - gender: male
+  - use_case: narrative_story
+Preview URL: https://storage.googleapis.com/eleven-public-prod/I2acRf9fWfRSiqTsjntyaGb20Jl1/voices/8g3yRGGwQdZMjSh79Uz4/afa10389-9bdb-449f-98ac-2b5cceb9ed39.mp3
+
+--------------------------------------------------
+
+Name: DJ Marathon
+Voice ID: 9pKX7TwfPxl7p2PNZQ1B
+Category: professional
+Description: American New York adult male with a raspy, scratchy, rough, or smooth voice. 
+Labels:
+  - language: en
+  - descriptive: confident
+  - accent: american
+  - gender: male
+  - age: young
+  - use_case: social_media
+Preview URL: https://storage.googleapis.com/eleven-public-prod/database/user/gB9qs4b6DZgKXN7xEJ8CWJUuM1t1/voices/9pKX7TwfPxl7p2PNZQ1B/XfIDBcSXypeZQI5QJ2XS.mp3
+
+--------------------------------------------------
+
+Name: Kindroid 5
+Voice ID: CTSjqjEjsLiwpmUG1KHE
+Category: generated
+Description: A 30 year old Brazilian woman, with a conversational and smooth tone. Latina accent.
+Labels:
+  - language: en
+Preview URL: https://storage.googleapis.com/eleven-public-prod/database/user/PHw43tO9Q4SkE22oE8BiajAtMVi2/voices/CTSjqjEjsLiwpmUG1KHE/c05baf0e-59b4-43ef-94dc-3908192934f2.mp3
+
+--------------------------------------------------
+
+Name: BillEigel
+Voice ID: FJhdURG7BEY7vnNun0v1
+Category: cloned
+Description: Bill Eigel
+Preview URL: https://storage.googleapis.com/eleven-public-prod/PHw43tO9Q4SkE22oE8BiajAtMVi2/voices/FJhdURG7BEY7vnNun0v1/c5584256-f40c-4c92-be6e-87ca612b5297.mp3
+
+--------------------------------------------------
+
+Name: Amy - Spunky Cartoon Girl Voice
+Voice ID: IGMgLIuIXlWhk8zKL9Pv
+Category: professional
+Description: A spunky, cheerful, and playful cartoon girl voice, brimming with youthful innocence and endless enthusiasm. Perfect for animated characters, this voice captures the lively, whimsical charm of classic cartoons with expressive and exaggerated tones. Ideal for bringing fun, energetic characters to life!
+Labels:
+  - language: en
+  - descriptive: childish
+  - accent: american
+  - gender: female
+  - age: young
+  - use_case: characters_animation
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/IGMgLIuIXlWhk8zKL9Pv/1ezpkKURpKLFmxVimBO7.mp3
+
+--------------------------------------------------
+
+Name: Johnny - Upbeat Professional American Male
+Voice ID: JZ3e95uoTACVf6tXaaEi
+Category: professional
+Description: A professional american male voice artist reading in an upbeat and relaxed tone. Perfect for health videos, news, commentary, and just about anything.
+Labels:
+  - language: en
+  - descriptive: excited
+  - accent: american
+  - gender: male
+  - age: young
+  - use_case: social_media
+Preview URL: https://storage.googleapis.com/eleven-public-prod/database/user/fd3nCjYHbrfsdh7cLnz0buRIGyy1/voices/JZ3e95uoTACVf6tXaaEi/HUWcgOmDKrIUMzlwAPYc.mp3
+
+--------------------------------------------------
+
+Name: Peter - Asian Australian Male voice
+Voice ID: NMbn4FNN0acONjKLsueJ
+Category: professional
+Description: Australia man in his 30s with Asian background and soft Australian accent. Voice works well for Podcasting.
+Labels:
+  - language: en
+  - descriptive: deep
+  - accent: australian
+  - gender: male
+  - age: young
+  - use_case: conversational
+Preview URL: https://storage.googleapis.com/eleven-public-prod/VpaKUVenqheYrHZ0tRdqH6ky06N2/voices/NMbn4FNN0acONjKLsueJ/c8ec5f5d-9779-4c0c-9c4f-3184580af80d.mp3
+
+--------------------------------------------------
+
+Name: Mary
+Voice ID: RmgEBrAzINOXbTurITE5
+Category: cloned
+Preview URL: https://storage.googleapis.com/eleven-public-prod/PHw43tO9Q4SkE22oE8BiajAtMVi2/voices/RmgEBrAzINOXbTurITE5/31c76a65-cf94-4f69-b7a3-15843f279bba.mp3
+
+--------------------------------------------------
+
+Name: Rakhat Eje 
+Voice ID: S8uKNSkW3pTOTAIAXKJR
+Category: professional
+Description: Middle aged Female voice. Good for informative videos.
+Labels:
+  - language: en
+  - descriptive: pleasant
+  - accent: russian
+  - gender: female
+  - age: middle_aged
+  - use_case: informative_educational
+Preview URL: https://storage.googleapis.com/eleven-public-prod/database/user/O3PKJMTdvYWCP5nXZ8dS8qgCpj02/voices/S8uKNSkW3pTOTAIAXKJR/58b85c46-40e2-4334-a69a-79ca13b203cf.mp3
+
+--------------------------------------------------
+
+Name: Allison - inviting and velvety British accent
+Voice ID: Se2Vw1WbHmGbBbyWTuu4
+Category: professional
+Description: A smooth British accent that is elegant and engaging. A perfect choice for audiobook narration and YouTube. 
+Labels:
+  - language: en
+  - descriptive: pleasant
+  - accent: british
+  - gender: female
+  - age: young
+  - use_case: narrative_story
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/Se2Vw1WbHmGbBbyWTuu4/3criMPMqBy1hVGIVhW2Q.mp3
+
+--------------------------------------------------
+
+Name: Tyrone
+Voice ID: X2j354mOfDROQk9ghjz4
+Category: professional
+Description: Most popular voice on Tiktok, YouTube Shorts and Instagram Reels. Great for Social Media content and it is a black or African American voice! 
+Labels:
+  - language: en
+  - descriptive: crisp
+  - accent: american
+  - gender: male
+  - age: middle_aged
+  - use_case: social_media
+Preview URL: https://storage.googleapis.com/eleven-public-prod/database/user/s8sNRAj3DjavgW13Zh8I1mmsbwz2/voices/X2j354mOfDROQk9ghjz4/FYjPo8Iwdz3Cmay4fdUo.mp3
+
+--------------------------------------------------
+
+Name: Jace Nox - Mellow, Gentle and Diverse
+Voice ID: XWA7mxc3XBa0tkJ9fKSO
+Category: professional
+Description: Young American female voice. Suitable for fictional characters, animations, and mellow vibes.
+Labels:
+  - language: en
+  - descriptive: chill
+  - accent: american
+  - gender: female
+  - age: young
+  - use_case: characters_animation
+Preview URL: https://storage.googleapis.com/eleven-public-prod/SJ5nPh8rezPExuo778Tb6kTfI163/voices/XWA7mxc3XBa0tkJ9fKSO/31203911-aa2d-4983-a987-21e37b4e5a05.mp3
+
+--------------------------------------------------
+
+Name: Amelia
+Voice ID: ZF6FPAbjXT4488VcRRnw
+Category: professional
+Description: A young British English woman's voice, clear and easy to understand. Expressive and enthusiastic, it's beautiful for narration, podcasts and social media such as YouTube, Tiktok, Reels and Stories. This studio-produced audio is great for a young woman's Gen-Z voice in audiobooks, high-quality video dubbing, advertising and reading.
+Labels:
+  - language: en
+  - descriptive: upbeat
+  - accent: british
+  - gender: female
+  - age: young
+  - use_case: narrative_story
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/ZF6FPAbjXT4488VcRRnw/PXswrdJcgsGr8VdoVA43.mp3
+
+--------------------------------------------------
+
+Name: Nick
+Voice ID: btd8vmyZ9B22pPccb1tN
+Category: cloned
+Preview URL: https://storage.googleapis.com/eleven-public-prod/PHw43tO9Q4SkE22oE8BiajAtMVi2/voices/btd8vmyZ9B22pPccb1tN/98967d17-8f18-42b5-8904-d54d5bff4fbd.mp3
+
+--------------------------------------------------
+
+Name: Mini - Child-like playful voice
+Voice ID: c62QWyOVKR2yQtDL3AAE
+Category: professional
+Description: Mini is a child-like version of ElevenLabs' famous voiceover artist Monika. Use this voice for creating children's stories, conversations, child voice dubbing, and more.
+Labels:
+  - language: en
+  - descriptive: childish
+  - accent: indian
+  - gender: female
+  - age: young
+  - use_case: characters_animation
+Preview URL: https://storage.googleapis.com/eleven-public-prod/database/user/TLzQBQZ61wQrytFwliQpe4LeshE3/voices/c62QWyOVKR2yQtDL3AAE/p3qCHfwSjL1YXbIoBzDu.mp3
+
+--------------------------------------------------
+
+Name: Leoni Vergara 
+Voice ID: pBZVCk298iJlHAcHQwLr
+Category: professional
+Description: International Cosmopolitan and educated voice. Warm, soothing, friendly and eloquent tone.  Works great for Virtual Assistants and conversational text . 
+Labels:
+  - language: en
+  - descriptive: confident
+  - age: middle_aged
+  - gender: female
+  - use_case: conversational
+Preview URL: https://storage.googleapis.com/eleven-public-prod/database/user/jtTYnERxVfShx33UbofXQyQtghT2/voices/pBZVCk298iJlHAcHQwLr/Spid4JaBLpq069Y48aB6.mp3
+
+--------------------------------------------------
+
+Name: The Baker
+Voice ID: tbZ7L89GMrlQ8DDVH5Fz
+Category: professional
+Description: Young male voice with neutral transatlantic and conversational African accent. Perfect for witty, authentic and authoritative reads.
+Labels:
+  - language: en
+  - descriptive: neutral
+  - accent: nigerian
+  - gender: male
+  - use_case: conversational
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/tbZ7L89GMrlQ8DDVH5Fz/aKv9eUp8jR4Ew5A9Hz8y.mp3
+
+--------------------------------------------------
+
+Name: Malik Tormenta
+Voice ID: vOIALd5lBpBRHdKPoBoQ
+Category: generated
+Description: 
+Voice Tone: A baritone with a haunting quality, capable of shifting from a seductive whisper to a commanding roar.
+Pace: Slow and contemplative, punctuated with moments of rapid intensity to highlight his volatile nature.
+Pitch: Generally low and menacing, with the ability to rise sharply during moments of heightened emotion or threat.
+Accent: An indistinct, global accent that hints at his worldly and timeless existence, with a trace of something ancient and otherworldly.
+Emotion: A mix of cold
+Labels:
+  - accent: jamaican
+  - descriptive: intense
+  - age: middle_aged
+  - gender: male
+  - use_case: characters_animation
+Preview URL: https://storage.googleapis.com/eleven-public-prod/nIh02QBZz9bThXkHolqWwwbh2G93/voices/5gnn38ytR46xLGmRk560/9ed18a31-0fad-429e-820e-4b017f6abbee.mp3
+
+--------------------------------------------------
+
+Name: Sumit
+Voice ID: vbMVIaJ5DNJyldLDYLLS
+Category: professional
+Description: A young Indian male with deep voice. Great for storytelling, and for video creation.
+
+Labels:
+  - language: en
+  - descriptive: deep
+  - accent: indian
+  - gender: male
+  - age: young
+  - use_case: social_media
+Preview URL: https://storage.googleapis.com/eleven-public-prod/l8iQLaMlbUYoUb77X8RHV8pKvbi2/voices/vbMVIaJ5DNJyldLDYLLS/909896e9-65bc-45c8-9d38-81fa3909a2b2.mp3
+
+--------------------------------------------------
+
+Name: Joe
+Voice ID: viKMrH7iB1SzYCmF8ixe
+Category: cloned
+Description: Male Midwestern
+Preview URL: https://storage.googleapis.com/eleven-public-prod/PHw43tO9Q4SkE22oE8BiajAtMVi2/voices/viKMrH7iB1SzYCmF8ixe/50f1fe7f-d861-4567-9a41-fc28bf517e52.mp3
+
+--------------------------------------------------
+
+Name: Vikrant - Indian 
+Voice ID: y6Ao4Y93UrnTbmzdVlFc
+Category: professional
+Description: A youthful, vibrant, and powerful male voice that captures the listener, making it well-suited for professional voice over work.
+Labels:
+  - language: en
+  - descriptive: professional
+  - accent: indian
+  - gender: male
+  - age: middle_aged
+  - use_case: informative_educational
+Preview URL: https://storage.googleapis.com/eleven-public-prod/custom/voices/y6Ao4Y93UrnTbmzdVlFc/0ZKBaQbIj0rPVhruGgZP.mp3
+
+--------------------------------------------------
+

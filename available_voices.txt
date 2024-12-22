@@ -1,0 +1,113 @@
+Available Hedra Voices:
+
+1. Alice (ID: Xb7hH8MSUJpSbSDYk0k2)
+   - British female, middle-aged, confident
+   - Good for: News
+   - Premium: No
+
+2. Brian (ID: nPczCjzI2devNBz1zQrb)
+   - American male, middle-aged, deep voice
+   - Good for: Narration
+   - Premium: No
+
+3. Charlotte (ID: XB0fDUnXU5powFXDhCwa)
+   - Swedish female, young, seductive
+   - Good for: Characters
+   - Premium: No
+
+4. Commercial Lady (ID: c2ac25f9-ecc4-4f56-9095-651354df60c0)
+   - American female, marketer
+   - Good for: Marketing
+   - Premium: No
+
+5. Dr. Von Fusion (ID: Mg1264PmwVoIedxsF9nu)
+   - German male, middle-aged, anxious
+   - Good for: Animation/Games, Mad Scientist character
+   - Premium: No
+
+6. Emily (ID: LcfcDJNUP1GQjkzn1xUU)
+   - American female, young, calm
+   - Good for: Meditation
+   - Premium: No
+
+7. George (ID: JBFqnCBsd6RMkjVDRZzb)
+   - British male, middle-aged, warm
+   - Good for: Narration
+   - Premium: No
+
+8. Hideo (ID: FMgBdHe1YV2Xi0B9anXW)
+   - Japanese male, middle-aged, gentle
+   - Good for: Animation Characters
+   - Premium: Yes
+
+9. Jamal (ID: 6OzrBCQf8cjERkYgzSg8)
+   - American male, young, chill
+   - Good for: Social Media
+   - Premium: Yes
+
+10. Kawaii Aerisita (ID: vGQNBgLaiM3EdZtxIiuY)
+    - American female, young, cheerful
+    - Good for: Anime/Video Games
+    - Premium: No
+
+11. Laura (ID: FGY2WhTYpPnrIDTdsKH5)
+    - American female, young, upbeat
+    - Good for: Social Media
+    - Premium: No
+
+12. Leo Moreno (ID: 3l9iCMrNSRR0w51JvFB0)
+    - Mexican male (English speaking), young, calm
+    - Good for: Conversations
+    - Premium: Yes
+
+13. Lily (ID: pFZP5JQG7iQjIQuC4Bku)
+    - British female, middle-aged, warm
+    - Good for: Narration
+    - Premium: No
+
+14. Lisa Kim (ID: VjguIG2t2hwOlsU1ftxC)
+    - Korean female, young, calm
+    - Good for: Narrative Stories
+    - Premium: Yes
+
+15. Matilda (ID: XrExE9yKIg1WjnnlVkGX)
+    - American female, middle-aged, friendly
+    - Good for: Narration
+    - Premium: No
+
+16. Naty Heals (ID: V77d29cqc7l8QOxgtgzi)
+    - American female (slight Mexican/Puerto Rican accent), early 30s
+    - Good for: Conversations
+    - Premium: Yes
+
+17. Patrick (ID: TPRq9ApqHzrtMlhzSx4d)
+    - German male, 40s, professional
+    - Good for: Advertisements
+    - Premium: Yes
+
+18. Prof. Marshal (ID: nzeAacJi50IvxcyDnMXa)
+    - German male, middle-aged, exuberant
+    - Good for: Characters & Animations
+    - Premium: Yes
+
+19. Raju (ID: 3gsg3cxXyFLcGIfNbM6C)
+    - Indian male, middle-aged, professional
+    - Good for: Conversations
+    - Premium: Yes
+
+20. Tara (ID: P7vsEyTOpZ6YUTulin8m)
+    - Indian female, young, emotional
+    - Good for: Conversations
+    - Premium: Yes
+
+21. Todd (ID: AQ6yxtsTonfHLHY2zUcO)
+    - American male, middle-aged, confident
+    - Good for: TV Ads/Commercials
+    - Premium: No
+
+22. Will (ID: bIHbv24MWmeRgasZH58o)
+    - American male, young, friendly
+    - Good for: Social Media
+    - Premium: No
+
+Each voice has a preview URL available. Would you like me to help you listen to any specific voices?

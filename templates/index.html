@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make MEC Say What?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="{{ url_for('index') }}" class="nav-link active">Home</a>
+            <a href="{{ url_for('gallery') }}" class="nav-link">User Created MEC Videos</a>
+            <a href="{{ url_for('privacy') }}" class="nav-link">Privacy Policy</a>
+            <a href="{{ url_for('responsible_ai') }}" class="nav-link">Responsible AI</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Make MEC Say What?</h1>
+            <div class="instructions">
+                <p>Create your own talking MEC video in 3 easy steps:</p>
+                <ol>
+                    <li>Choose your favorite MEC image</li>
+                    <li>Type what you want MEC to say</li>
+                    <li>Generate a video of MEC speaking your text!</li>
+                </ol>
+            </div>
+        </header>
+
+        <div class="example-section">
+            <h2>See it in action</h2>
+            <p class="example-text">Watch this example to see what you can create! Select an image, enter your text, and we'll generate a similar video for you.</p>
+            <div class="video-container">
+                <video controls class="example-video" preload="metadata">
+                    <source src="{{ url_for('static', filename='example/mecfinalexample.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="image-grid" id="imageGrid">
+                <div class="aspect-group">
+                    <div class="image-row">
+                        {% for image in images %}
+                            {% if image.aspect_ratio == "9:16" %}
+                            <div class="image-card" data-image-id="{{ image.id }}" data-aspect-ratio="{{ image.aspect_ratio }}">
+                                <img src="{{ url_for('static', filename=image.path) }}" 
+                                     alt="MEC Image {{ image.id }}"
+                                     loading="lazy"
+                                     class="grid-image"
+                                     data-image-path="{{ image.path }}"
+                                     data-aspect-ratio="{{ image.aspect_ratio }}">
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="aspect-group">
+                    <div class="image-row">
+                        {% for image in images %}
+                            {% if image.aspect_ratio == "16:9" %}
+                            <div class="image-card" data-image-id="{{ image.id }}" data-aspect-ratio="{{ image.aspect_ratio }}">
+                                <img src="{{ url_for('static', filename=image.path) }}" 
+                                     alt="MEC Image {{ image.id }}"
+                                     loading="lazy"
+                                     class="grid-image"
+                                     data-image-path="{{ image.path }}"
+                                     data-aspect-ratio="{{ image.aspect_ratio }}">
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="aspect-group">
+                    <div class="image-row">
+                        {% for image in images %}
+                            {% if image.aspect_ratio == "1:1" %}
+                            <div class="image-card" data-image-id="{{ image.id }}" data-aspect-ratio="{{ image.aspect_ratio }}">
+                                <img src="{{ url_for('static', filename=image.path) }}" 
+                                     alt="MEC Image {{ image.id }}"
+                                     loading="lazy"
+                                     class="grid-image"
+                                     data-image-path="{{ image.path }}"
+                                     data-aspect-ratio="{{ image.aspect_ratio }}">
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-input-section" style="display: none;">
+                <div class="selected-image-container" id="selectedImageContainer">
+                    <img src="" alt="Selected Image" id="selectedImage" class="selected-image">
+                </div>
+                <div class="input-container">
+                    <textarea 
+                        id="textInput" 
+                        placeholder="Enter the text you want MEC to say..."
+                        rows="4"></textarea>
+                    <button id="submitButton" class="submit-btn">
+                        <span class="button-text">Generate MEC's Voice</span>
+                        <div class="button-loader" style="display: none;"></div>
+                    </button>
+                    <div id="feedback" class="feedback-message" style="display: none;"></div>
+                    <div id="audioPlayer" class="audio-player" style="display: none;">
+                        <h3>Generated Audio</h3>
+                        <audio controls>
+                            Your browser does not support the audio element.
+                        </audio>
+                        <button id="nextButton" class="next-btn" style="display: none;">
+                            <span class="button-text">Create MEC Talking Video</span>
+                            <div class="button-loader" style="display: none;"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageGrid = document.getElementById('imageGrid');
+            const textInputSection = document.querySelector('.text-input-section');
+            const selectedImage = document.getElementById('selectedImage');
+            const textInput = document.getElementById('textInput');
+            const nextButton = document.getElementById('nextButton');
+            let selectedCard = null;
+            
+            function selectImage(imageCard) {
+                if (selectedCard === imageCard) return;
+                
+                // Remove selected class from previous card
+                if (selectedCard) {
+                    selectedCard.classList.remove('selected');
+                }
+                
+                // Update selected card
+                selectedCard = imageCard;
+                selectedCard.classList.add('selected');
+                
+                // Update selected image
+                const clickedImage = imageCard.querySelector('img');
+                selectedImage.src = clickedImage.src;
+                selectedImage.alt = clickedImage.alt;
+                const aspectRatio = clickedImage.dataset.aspectRatio;
+                selectedImage.className = 'selected-image';
+                const container = document.getElementById('selectedImageContainer');
+                container.setAttribute('data-aspect-ratio', aspectRatio);
+                
+                // Show text input section with animation
+                textInputSection.style.display = 'flex';
+                textInputSection.style.opacity = '0';
+                setTimeout(() => {
+                    textInputSection.style.opacity = '1';
+                }, 50);
+                
+                // Add thumbnail mode to grid with animation
+                imageGrid.classList.add('thumbnail-mode');
+                
+                // Focus text input
+                textInput.focus();
+                
+                // Store selected image data
+                textInput.dataset.selectedImageId = imageCard.dataset.imageId;
+            }
+
+            function showFeedback(message, isError = false) {
+                const feedback = document.getElementById('feedback');
+                feedback.textContent = message;
+                feedback.className = `feedback-message ${isError ? 'error' : 'success'}`;
+                feedback.style.display = 'block';
+                setTimeout(() => {
+                    feedback.style.display = 'none';
+                }, 5000);
+            }
+
+            function setLoading(loading) {
+                const submitButton = document.getElementById('submitButton');
+                const buttonText = submitButton.querySelector('.button-text');
+                const buttonLoader = submitButton.querySelector('.button-loader');
+                
+                submitButton.disabled = loading;
+                buttonText.style.display = loading ? 'none' : 'block';
+                buttonLoader.style.display = loading ? 'block' : 'none';
+            }
+
+
+
+            async function handleSubmit() {
+                const text = textInput.value.trim();
+                const imageId = textInput.dataset.selectedImageId;
+
+                if (!text) {
+                    showFeedback('Please enter some text', true);
+                    return;
+                }
+
+                if (!imageId) {
+                    showFeedback('Please select an image', true);
+                    return;
+                }
+
+                setLoading(true);
+
+                try {
+                    const response = await fetch('/generate', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            image_id: imageId,
+                            text: text
+                        })
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok) {
+                        showFeedback(data.message);
+                        
+                        // Update and show audio player
+                        const audioPlayer = document.getElementById('audioPlayer');
+                        const audio = audioPlayer.querySelector('audio');
+                        
+                        audio.src = data.audio_url;
+                        audioPlayer.style.display = 'block';
+                        nextButton.style.display = 'block';
+                        // Clear the input
+                        textInput.value = '';
+                    } else {
+                        showFeedback(data.error || 'An error occurred', true);
+                    }
+                } catch (error) {
+                    showFeedback('Failed to connect to server', true);
+                } finally {
+                    setLoading(false);
+                }
+            }
+
+            async function handleNext() {
+                const buttonText = nextButton.querySelector('.button-text');
+                const buttonLoader = nextButton.querySelector('.button-loader');
+                
+                nextButton.disabled = true;
+                buttonText.style.display = 'none';
+                buttonLoader.style.display = 'block';
+
+                try {
+                    const audio = document.querySelector('audio');
+                    const imageId = textInput.dataset.selectedImageId;
+                    
+                    const response = await fetch('/generate_video', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            audio_url: audio.src,
+                            image_id: imageId
+                        })
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok) {
+                        showFeedback('Video generation started! Redirecting to your video page...');
+                        window.location.href = data.video_url;
+                    } else {
+                        showFeedback(data.error || 'Failed to start video generation', true);
+                        nextButton.disabled = false;
+                        buttonText.style.display = 'block';
+                        buttonLoader.style.display = 'none';
+                    }
+                } catch (error) {
+                    showFeedback('Failed to connect to server', true);
+                    nextButton.disabled = false;
+                    buttonText.style.display = 'block';
+                    buttonLoader.style.display = 'none';
+                }
+            }
+            
+            // Event Listeners
+            imageGrid.addEventListener('click', (e) => {
+                const imageCard = e.target.closest('.image-card');
+                if (!imageCard) return;
+                selectImage(imageCard);
+            });
+
+            document.getElementById('submitButton').addEventListener('click', handleSubmit);
+            nextButton.addEventListener('click', handleNext);
+
+            // Handle keyboard navigation and submission
+            document.addEventListener('keydown', (e) => {
+                if (!selectedCard) return;
+                
+                const cards = Array.from(document.querySelectorAll('.image-card'));
+                const currentIndex = cards.indexOf(selectedCard);
+                
+                if (e.key === 'ArrowUp' && currentIndex > 0) {
+                    selectImage(cards[currentIndex - 1]);
+                } else if (e.key === 'ArrowDown' && currentIndex < cards.length - 1) {
+                    selectImage(cards[currentIndex + 1]);
+                } else if (e.key === 'Enter' && e.ctrlKey) {
+                    handleSubmit();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

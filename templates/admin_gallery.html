@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Gallery - Make MEC Say What?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="{{ url_for('index') }}" class="nav-link">Home</a>
+            <a href="{{ url_for('gallery') }}" class="nav-link">User Created MEC Videos</a>
+            <a href="{{ url_for('privacy') }}" class="nav-link">Privacy Policy</a>
+            <a href="{{ url_for('responsible_ai') }}" class="nav-link">Responsible AI</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Admin Gallery</h1>
+            <p class="subtitle">Manage user-generated videos</p>
+        </header>
+
+        <div class="gallery-grid">
+            {% for video in videos %}
+            <div class="gallery-item" data-status="{{ video.status }}" data-video-id="{{ video.id }}">
+                <div class="gallery-item-content">
+                    {% if video.status == 'completed' %}
+                    <div class="video-wrapper" data-aspect-ratio="{{ get_aspect_ratio(video.image.filename) }}">
+                        <video class="gallery-video" controls>
+                            <source src="{{ video.video_url }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    {% else %}
+                    <div class="preview-image" data-aspect-ratio="{{ get_aspect_ratio(video.image.filename) }}">
+                        <img src="{{ url_for('static', filename=video.image.path) }}" 
+                             alt="MEC Video"
+                             class="gallery-image">
+                        {% if video.status == 'pending' %}
+                        <div class="status-overlay pending">
+                            <div class="status-loader"></div>
+                            <span>Processing...</span>
+                        </div>
+                        {% elif video.status == 'failed' %}
+                        <div class="status-overlay failed">
+                            <span>Generation Failed</span>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                    <div class="video-details">
+                        <p class="video-text">"{{ video.text[:100] + '...' if video.text|length > 100 else video.text }}"</p>
+                        <p class="timestamp">Created {{ video.created_at.strftime('%B %d, %Y %I:%M %p') }}</p>
+                        <div class="admin-actions">
+                            <button onclick="deleteVideo({{ video.id }})" class="delete-btn">Delete Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+            {% if not videos %}
+            <div class="no-videos">
+                <p>No videos have been created yet.</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        function deleteVideo(videoId) {
+            if (confirm('Are you sure you want to delete this video?')) {
+                fetch(`/admin/delete_video/${videoId}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Admin-Password': '{{ request.args.get("password") }}'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Remove the video element from the page
+                        const videoElement = document.querySelector(`.gallery-item[data-video-id="${videoId}"]`);
+                        if (videoElement) {
+                            videoElement.remove();
+                        }
+                    } else {
+                        alert('Error deleting video: ' + data.error);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error deleting video');
+                });
+            }
+        }
+    </script>
+</body>
+</html>
