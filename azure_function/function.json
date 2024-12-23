@@ -1,0 +1,11 @@
+{
+  "scriptFile": "azure_video_downloader.py",
+  "bindings": [
+    {
+      "name": "timer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 */1 * * *"
+    }
+  ]
+}

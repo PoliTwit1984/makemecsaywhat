@@ -1,0 +1,32 @@
+services:
+  web:
+    build: 
+      context: .
+      no_cache: true
+    ports:
+      - "8000:8000"
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=production
+      - ELEVEN_API_KEY=${ELEVEN_API_KEY}
+      - HEDRA_API_KEY=${HEDRA_API_KEY}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - AZURE_STORAGE_CONNECTION_STRING=${AZURE_STORAGE_CONNECTION_STRING}
+    volumes:
+      - ./instance:/app/instance
+      - ./mecimages:/app/static/mecimages
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+    mem_limit: 1g
+    mem_reservation: 512m
+    cpus: 0.5

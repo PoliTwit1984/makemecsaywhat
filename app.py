@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, jsonify, send_from_directory, url_for, session
+
+from flask import Flask, render_template, request, jsonify, send_from_directory, url_for, session
 from functools import wraps
 from dotenv import load_dotenv
 import os
@@ -54,6 +56,11 @@ def admin_required(f):
 
 
 
+@app.route('/health')
+def health():
+    """Health check endpoint for Docker container"""
+    return jsonify({'status': 'healthy'}), 200
+
 @app.route('/privacy')
 def privacy():
     return render_template('privacy.html')
@@ -76,33 +83,34 @@ def index():
 
 def generate_audio(text, output_file):
     """Generate audio using ElevenLabs API and save to file"""
-    url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
-    
-    headers = {
-        "Accept": "audio/mpeg",
-        "Content-Type": "application/json",
-        "xi-api-key": ELEVEN_API_KEY
-    }
-    
-    data = {
-        "text": text,
-        "model_id": "eleven_monolingual_v1",
-        "voice_settings": VOICE_SETTINGS
-    }
-    
-    response = requests.post(url, json=data, headers=headers)
-    
-    if response.status_code != 200:
-        raise Exception(f"ElevenLabs API error: {response.text}")
-    
-    # Ensure the static/audio directory exists
-    os.makedirs('static/audio', exist_ok=True)
-    
-    # Save the audio file
-    with open(output_file, "wb") as f:
-        f.write(response.content)
-    
-    return True
+    try:
+        url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
+        
+        headers = {
+            "Accept": "audio/mpeg",
+            "Content-Type": "application/json",
+            "xi-api-key": ELEVEN_API_KEY
+        }
+        
+        data = {
+            "text": text,
+            "model_id": "eleven_monolingual_v1",
+            "voice_settings": VOICE_SETTINGS
+        }
+        
+        response = requests.post(url, json=data, headers=headers)
+        response.raise_for_status()
+        
+        # Ensure the static/audio directory exists
+        os.makedirs('static/audio', exist_ok=True)
+        
+        # Save the audio file
+        with open(output_file, "wb") as f:
+            f.write(response.content)
+        
+        return True
+    except Exception as e:
+        raise Exception(f"ElevenLabs API error: {str(e)}")
 
 @app.route('/generate', methods=['POST'])
 def generate():
@@ -165,6 +173,15 @@ def get_aspect_ratio(filename):
 
 def download_file(url):
     """Download a file from a URL and return its content"""
+    # If the URL is a relative path starting with /static, read the file directly
+    if url.startswith('/static/'):
+        file_path = os.path.join(os.getcwd(), url.lstrip('/'))
+        if os.path.exists(file_path):
+            with open(file_path, 'rb') as f:
+                return f.read()
+        raise FileNotFoundError(f"File not found: {file_path}")
+    
+    # Otherwise, treat it as a remote URL
     response = requests.get(url)
     response.raise_for_status()
     return response.content
@@ -176,9 +193,12 @@ def generate_unique_token():
 
 @app.route('/gallery')
 def gallery():
-    """Display the dynamic gallery of all MEC videos"""
-    # Get all videos, ordered by newest first
-    videos = MECVideoGeneration.query.order_by(MECVideoGeneration.created_at.desc()).all()
+    """Display the dynamic gallery of downloaded MEC videos"""
+    # Get only videos that have been downloaded locally
+    videos = MECVideoGeneration.query.filter(
+        MECVideoGeneration.local_video_path.isnot(None),
+        MECVideoGeneration.local_video_path != ''
+    ).order_by(MECVideoGeneration.created_at.desc()).all()
     return render_template('gallery.html', videos=videos, get_aspect_ratio=get_aspect_ratio)
 
 @app.route('/my-video/<token>')
@@ -238,11 +258,18 @@ def generate_video():
                 "avatarImage": hedra_image_url,
                 "audioSource": "audio",
                 "voiceUrl": hedra_audio_url,
-                "aspectRatio": get_aspect_ratio(image.filename),
-                "shared": True
+                "aspectRatio": get_aspect_ratio(image.filename)
             }
         )
         character_response.raise_for_status()
+        
+        # Ensure video is shared
+        job_id = character_response.json()['jobId']
+        share_response = requests.post(
+            f"{HEDRA_BASE_URL}/v1/projects/{job_id}/sharing?shared=true",
+            headers={'X-API-KEY': HEDRA_API_KEY}
+        )
+        share_response.raise_for_status()
         
         # Get the text from the audio file name
         audio_path = urlparse(audio_url).path.split('/')[-1]
@@ -307,7 +334,13 @@ def check_video_status(job_id):
         if current_status != video_gen.status:
             video_gen.status = current_status
             if current_status == 'completed':
-                video_gen.video_url = data.get('videoUrl')
+                # Ensure video stays shared for Azure Function to process
+                share_response = requests.post(
+                    f"{HEDRA_BASE_URL}/v1/projects/{job_id}/sharing?shared=true",
+                    headers={'X-API-KEY': HEDRA_API_KEY}
+                )
+                share_response.raise_for_status()
+                # Don't set video_url here - Azure Function will handle downloading and setting the path
             db.session.commit()
 
         return jsonify({

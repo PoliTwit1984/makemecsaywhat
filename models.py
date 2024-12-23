@@ -23,6 +23,7 @@ class MECVideoGeneration(db.Model):
     video_url = db.Column(db.String(500), nullable=True)
     unique_token = db.Column(db.String(100), nullable=False, unique=True)
     share_url = db.Column(db.String(500), nullable=True)
+    local_video_path = db.Column(db.String(500), nullable=True)  # Path to locally stored video file
     
     # Relationships
     image = db.relationship('Image', backref='video_generations')

@@ -1,0 +1,19 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+*.db
+celerybeat-schedule*
+.DS_Store
+.git
+.gitignore
+README.md
+*.log
+instance/
+static/audio/*
+# Keep downloaded videos
+# static/generated_videos/*

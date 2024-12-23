@@ -46,14 +46,24 @@
                             <input type="text" value="{{ video.get_share_url() }}" class="share-url" readonly>
                             <button onclick="copyShareUrl()" class="copy-btn">Copy Share URL</button>
                         </div>
-                        {% if video.status == 'completed' %}
-                        <a href="{{ video.video_url }}" class="download-btn" target="_blank">
+                        {% if video.status == 'completed' and video.local_video_path %}
+                        <a href="{{ url_for('static', filename=video.local_video_path) }}" class="download-btn" target="_blank">
                             Watch Video
                         </a>
+                        {% elif video.status == 'completed' %}
+                        <div class="status-message">
+                            <span>Processing Complete! Video will be available in the gallery soon.</span>
+                            <a href="{{ url_for('gallery') }}" class="download-btn">
+                                Go to Gallery
+                            </a>
+                        </div>
                         {% elif video.status == 'pending' %}
-                        <a href="{{ video.get_share_url() }}" class="download-btn" target="_blank">
-                            View on Hedra
-                        </a>
+                        <div class="status-message">
+                            <span>Video is being processed by Hedra...</span>
+                            <button class="download-btn pending" disabled>
+                                Processing...
+                            </button>
+                        </div>
                         {% else %}
                         <button class="download-btn failed" disabled>Generation Failed</button>
                         {% endif %}

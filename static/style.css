@@ -897,6 +897,61 @@ textarea:focus {
     text-decoration: underline;
 }
 
+/* Privacy and Responsible AI Pages */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.content section {
+    margin-bottom: 2rem;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.content ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.content ul li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: -1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .content h2 {
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-content {
         gap: 1rem;

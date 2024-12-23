@@ -19,52 +19,22 @@
     <div class="container">
         <header>
             <h1>MEC Video Gallery</h1>
-            <p class="subtitle">Your generated videos will appear here!</p>
+            <p class="subtitle">Your downloaded videos are available here!</p>
         </header>
 
         <div class="gallery-grid">
             {% for video in videos %}
-            <div class="gallery-item" data-status="{{ video.status }}">
+            <div class="gallery-item">
                 <div class="gallery-item-content">
-                    {% if video.status == 'completed' %}
                     <div class="video-wrapper" data-aspect-ratio="{{ get_aspect_ratio(video.image.filename) }}">
                         <video class="gallery-video" controls>
-                            <source src="{{ video.video_url }}" type="video/mp4">
+                            <source src="{{ url_for('static', filename=video.local_video_path) }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    {% else %}
-                    <div class="preview-image" data-aspect-ratio="{{ get_aspect_ratio(video.image.filename) }}">
-                        <img src="{{ url_for('static', filename=video.image.path) }}" 
-                             alt="MEC Video"
-                             class="gallery-image">
-                        {% if video.status == 'pending' %}
-                        <div class="status-overlay pending">
-                            <div class="status-loader"></div>
-                            <span>Processing...</span>
-                        </div>
-                        {% elif video.status == 'failed' %}
-                        <div class="status-overlay failed">
-                            <span>Generation Failed</span>
-                        </div>
-                        {% endif %}
-                    </div>
-                    {% endif %}
                     <div class="video-details">
                         <p class="video-text">"{{ video.text[:100] + '...' if video.text|length > 100 else video.text }}"</p>
                         <p class="timestamp">Created {{ video.created_at.strftime('%B %d, %Y %I:%M %p') }}</p>
-                        {% if video.status == 'pending' %}
-                        <div class="button-group">
-                            <a href="{{ video.get_share_url() }}" class="download-btn" target="_blank">
-                                View on Hedra
-                            </a>
-                            <a href="{{ url_for('my_video', token=video.unique_token) }}" class="download-btn pending">
-                                View Status
-                            </a>
-                        </div>
-                        {% elif video.status == 'failed' %}
-                        <button class="download-btn failed" disabled>Generation Failed</button>
-                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -72,7 +42,7 @@
             
             {% if not videos %}
             <div class="no-videos">
-                <p>No videos have been created yet. Be the first to create one!</p>
+                <p>No downloaded videos available yet. Videos will appear here after they are processed and downloaded.</p>
             </div>
             {% endif %}
         </div>
