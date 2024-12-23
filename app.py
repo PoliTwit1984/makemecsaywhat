@@ -371,7 +371,10 @@ def delete_video(video_id):
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)})
 
+
+
 if __name__ == '__main__':
     ensure_directories()
     init_db()
-    app.run(port=8000, debug=True)
+    if os.getenv("FLASK_ENV") == "development":
+        app.run(port=8000, debug=True)

@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir -r requirements.txt gunicorn watchdog[watchmedo]
 COPY . .
 
 # Create necessary directories and set permissions
-RUN mkdir -p static/audio static/generated_videos instance && \
+RUN mkdir -p /app/logs static/audio static/generated_videos instance && \
     chown -R appuser:appuser /app
 
 # Set environment variables

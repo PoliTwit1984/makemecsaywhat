@@ -14,7 +14,7 @@ services:
       - AZURE_STORAGE_CONNECTION_STRING=${AZURE_STORAGE_CONNECTION_STRING}
     volumes:
       - ./instance:/app/instance
-      - ./mecimages:/app/static/mecimages
+      - ./static/mecimages:/app/static/mecimages
     logging:
       driver: "json-file"
       options:
